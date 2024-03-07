@@ -1,0 +1,72 @@
+body, html {
+    margin: 0;
+    overflow-x: hidden;
+    background-color: #FFFFF0;
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ADA3A4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    transition: font 0.4s ease, background-color 0.4s ease;
+    @media (width <1000px) {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 32vw;
+        background-color: rgba(173, 163, 164, 0.5);
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        font-size: 5vw;
+        transition: width 0.2s ease;
+    }
+}
+
+li {
+    float: left;
+    @media (width < 1000px) {
+        float: none;
+    }
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw 2vw;
+    transition: padding 0.4s ease, color 0.4s ease;
+}
+  
+li a:hover:not(.active) {
+    background-color: transparent;
+}
+  
+.active {
+    background-color: #C4CFD8;
+}
+
+.morebtn {
+    @media (width < 1000px){
+        background-color: transparent;
+        color: black;
+        position: fixed; right: 0;
+        margin-top: -10px;
+        padding: 2vw;
+        font-size: 30px;
+        border: none;
+        cursor: pointer;
+    }
+  }
+/* Navbar */
