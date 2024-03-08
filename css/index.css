@@ -75,6 +75,7 @@ li a:hover:not(.active) {
         font-size: 30px;
         border: none;
         cursor: pointer;
+        z-index: 99;
     }
   }
 
