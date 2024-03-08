@@ -40,14 +40,14 @@ function mobile(){
 
 function closeopen(){
     if (navbar.style.width == "32vw") {
-        navbar.style.width = "0vw";
-    } else if (navbar.style.width == "0vw") {
+        navbar.style.width = "0%";
+    } else if (navbar.style.width == "0%") {
         navbar.style.width = "32vw";
     }
 }
 
 window.addEventListener('resize', function(event) {
-    if (navbar.style.width != "0vw" && this.innerWidth < 1000) {
+    if (navbar.style.width != "0%" && this.innerWidth < 1000) {
         mobile();
         return;
     }
@@ -60,7 +60,7 @@ window.addEventListener('resize', function(event) {
 
 window.addEventListener('scroll', function(event) {
     event.preventDefault(); 
-    if (navbar.style.width != "0vw" && this.innerWidth < 1000) {
+    if (navbar.style.width != "0%" && this.innerWidth < 1000) {
         mobile();
         return;
     }
