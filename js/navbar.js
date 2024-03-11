@@ -1,6 +1,7 @@
 var navbar = document.getElementById('navbar')
 var navbarpadcol = document.querySelectorAll('#navbar li a')
 var button = document.getElementById('drpbtn')
+var checkbox = document.getElementById('open-nav')
 
 function shrink(){
     navbar.classList.add('shrink');
@@ -26,3 +27,11 @@ window.addEventListener('scroll', function(event) {
         grow();
     }
   });
+
+window.addEventListener('resize', function(event) {
+    event.preventDefault();
+    if (this.innerWidth > 1000) {
+        if (checkbox.checked!=false)
+        checkbox.click();
+    }
+})
