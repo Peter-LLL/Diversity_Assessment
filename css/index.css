@@ -117,7 +117,7 @@ ul.shrink {
   }
 
 .logo {
-    width: 2.8vw;
+    width: 2.5vw;
     align-self: center;
     margin-left: auto;
     @media (width < 1000px){
