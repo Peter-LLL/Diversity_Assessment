@@ -99,6 +99,7 @@ ul.shrink {
         transition: color 0.7s ease;
         animation: backInRight;
         animation-duration: 0.5s;
+        cursor: pointer;
     }
   }
 
