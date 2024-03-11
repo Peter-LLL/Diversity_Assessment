@@ -3,7 +3,7 @@ body, html {
     overflow-x: hidden;
     background-color: #FFFFF0;
     @media (width >= 1000px) {
-        padding-top: 1.7vw;
+        padding-top: 2vw;
     }
 }
 
@@ -90,11 +90,12 @@ ul.shrink {
     @media (width < 1000px){
         display: block;
         background-color: transparent;
-        color: rgb(126, 124, 124);
+        color: white;
         position: fixed; right: 0;
         margin-top: -5px;
         padding: 2vw;
         font-size: 30px;
+        transition: color 0.7s ease;
         animation: backInRight;
         animation-duration: 0.5s;
     }
@@ -110,9 +111,26 @@ ul.shrink {
 }
 /* Navbar */
 
-p {
+.hero {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background: rgb(226,170,195);
+    background: linear-gradient(90deg, rgba(226,170,195,1) 0%, rgba(106,132,163,1) 100%);
+}
+
+.hero-text {
+    align-self: flex-end;
     margin-left: 20px;
-    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 77px;
+    font-family: 'Dosis', sans-serif;
+    color: white; 
+}
+
+p {
+    margin-left: 20vw;
+    margin-right: 20vw;
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
 }

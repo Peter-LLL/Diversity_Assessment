@@ -1,6 +1,4 @@
-var navbar = document.getElementById('navbar')
-var navbarpadcol = document.querySelectorAll('#navbar li a')
-var button = document.getElementById('drpbtn')
+var button = document.querySelector(".nav-btn")
 var checkbox = document.getElementById('open-nav')
 
 function shrink(){
@@ -19,6 +17,12 @@ window.addEventListener('scroll', function(event) {
     event.preventDefault(); 
     if (this.innerWidth < 1000) {
         mobile();
+        if (this.window.scrollY >= 200) {
+            button.style.color = "rgb(126, 124, 124)";
+        }
+        else {
+            button.style.color = "white";
+        }
         return;
     }
     if (window.scrollY >= 100 && this.innerWidth > 1000) {
