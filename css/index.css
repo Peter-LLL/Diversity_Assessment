@@ -60,7 +60,7 @@ li a {
     text-align: center;
     text-decoration: none;
     padding: 1vw 2vw;
-    transition: padding 0.4s ease, color 0.4s ease;
+    transition: padding 0.4s ease, color 0.4s ease, background-color 0.4s ease;
     @media (width < 1000px) {
         padding: 16px 8px;
     }
@@ -68,7 +68,7 @@ li a {
   
 li a:hover {
     background-color: #91898a;
-    transition: background-color 0.6s ease;
+    transition: background-color 0.4s ease;
 }
   
 li a.active {
