@@ -11,13 +11,12 @@ function grow(){
 }
 
 function mobile(){
-    navbar.classList.add('mobile');
     navbar.classList.remove('shrink');
 }
 
 window.addEventListener('scroll', function(event) {
     event.preventDefault(); 
-    if (navbar.style.width != "0%" && this.innerWidth < 1000) {
+    if (this.innerWidth < 1000) {
         mobile();
         return;
     }

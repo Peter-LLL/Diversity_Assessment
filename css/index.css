@@ -2,8 +2,8 @@ body, html {
     margin: 0;
     overflow-x: hidden;
     background-color: #FFFFF0;
-    @media (width > 1000px) {
-        padding-top: 2vw;
+    @media (width >= 1000px) {
+        padding-top: 1.7vw;
     }
 }
 
@@ -29,11 +29,10 @@ ul {
         margin: 0;
         padding: 0;
         width: 0;
-        background-color: rgba(173, 163, 164, 0.5);
         position: fixed;
         height: 100%;
         overflow: hidden;
-        font-size: 5vw;
+        font-size: 30px;
         transition: width 0.2s ease;
     }
 }
@@ -44,7 +43,7 @@ ul {
 
 @media (width < 1000px) {
     #open-nav:checked ~ ul {
-        width: 32vw;
+        width: 200px;
     }
 }
 
@@ -62,6 +61,9 @@ li a {
     text-decoration: none;
     padding: 1vw 2vw;
     transition: padding 0.4s ease, color 0.4s ease;
+    @media (width < 1000px) {
+        padding: 16px 8px;
+    }
 }
   
 li a:hover:not(.active) {
@@ -99,8 +101,6 @@ ul.shrink {
         margin-top: -10px;
         padding: 2vw;
         font-size: 30px;
-        border: none;
-        cursor: pointer;
     }
   }
 
@@ -109,7 +109,7 @@ ul.shrink {
     align-self: center;
     margin-left: auto;
     @media (width < 1000px){
-        width: 0vw;
+        width: 0;
     }
 }
 /* Navbar */
