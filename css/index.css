@@ -15,7 +15,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #ADA3A4;
+    background-color: #ada3a4;
     position: fixed;
     top: 0;
     width: 100%;
@@ -70,7 +70,7 @@ li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 1vw 2vw;
+    padding: 1vw 1.2vw;
     transition: padding 0.4s ease, color 0.4s ease, background-color 0.4s ease;
     @media (width < 1000px) {
         padding: 16px 8px;
@@ -82,12 +82,12 @@ li a.active {
 }
 
 ul.shrink {
-    background-color: transparent;
+    background-color: rgb(173, 163, 164, 0.5);
     font-size: 25px;
     width: 100%;
     height: auto;
     li a {
-        padding: 0.6vw 1.6vw;
+        padding: 0.6vw 0.8vw;
         color: black;
     }
     li.hvr-rectangle-out {
