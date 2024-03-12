@@ -70,7 +70,7 @@ li a {
     color: white;
     text-align: center;
     text-decoration: none;
-    padding: 1vw 2vw;
+    padding: 1vw 1.2vw;
     transition: padding 0.4s ease, color 0.4s ease, background-color 0.4s ease;
     @media (width < 1000px) {
         padding: 16px 8px;
@@ -87,7 +87,7 @@ ul.shrink {
     width: 100%;
     height: auto;
     li a {
-        padding: 0.6vw 1.6vw;
+        padding: 0.6vw 0.8vw;
         color: black;
     }
     li.hvr-rectangle-out {
