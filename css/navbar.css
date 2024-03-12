@@ -45,7 +45,7 @@ li {
     }
 }
 
-
+/* Navbar Hover Colour Fix */
 li.hvr-rectangle-out {
     background: transparent;
     display: block;
@@ -54,6 +54,7 @@ li.hvr-rectangle-out {
 li.hvr-rectangle-out:before {
     background: #91898a;
 }
+/* Navbar Hover Colour Fix */
   
 li a {
     display: block;
@@ -79,6 +80,7 @@ ul.shrink {
     li a {
         padding: 0.6vw 0.8vw;
     }
+    /* Navbar Hover Colour Fix */
     li.hvr-rectangle-out {
         background: transparent;
         display: block;
@@ -87,6 +89,7 @@ ul.shrink {
     li.hvr-rectangle-out:before {
         background: #dfcdcd;
     }
+    /* Navbar Hover Colour Fix */
 }
 
 .nav-btn {
