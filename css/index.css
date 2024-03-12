@@ -8,131 +8,17 @@ body, html {
     }
 }
 
-/* Navbar */
-ul {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #ada3a4;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: auto;
-    font-size: 30px;
-    font-weight: 500;
-    font-family: 'Dosis', sans-serif;
-    transition: font 0.4s ease, background-color 0.4s ease;
-    @media (width < 1000px) {
-        display: block;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        width: 200px;
-        position: fixed;
-        height: 100%;
-        overflow: hidden;
-        font-size: 30px;
-        transition: width 0.2s ease;
-    }
-}
-
-#open-nav {
-    display: none;
-}
-
-@media (width < 1000px) {
-    #open-nav:checked ~ ul {
-        width: 0;
-    }
-}
-
-li {
-    float: left;
-    @media (width < 1000px) {
-        float: none;
-    }
-}
-
-
-li.hvr-rectangle-out {
-    background: transparent;
-    display: block;
-}
-
-li.hvr-rectangle-out:before {
-    background: #91898a;
-}
-  
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    text-decoration: none;
-    padding: 1vw 1.2vw;
-    transition: padding 0.4s ease, color 0.4s ease, background-color 0.4s ease;
-    @media (width < 1000px) {
-        padding: 16px 8px;
-    }
-}
-
-li a.active {
-    text-decoration: underline;
-}
-
-ul.shrink {
-    background-color: rgb(173, 163, 164, 0.5);
-    font-size: 25px;
-    width: 100%;
-    height: auto;
-    li a {
-        padding: 0.6vw 0.8vw;
-        color: black;
-    }
-    li.hvr-rectangle-out {
-        background: transparent;
-        display: block;
-    }
-    
-    li.hvr-rectangle-out:before {
-        background: #dfcdcd;
-    }
-}
-
-.nav-btn {
-    display: none;
-    @media (width < 1000px){
-        display: block;
-        background-color: transparent;
-        color: white;
-        position: fixed; right: 0;
-        margin-top: -12px;
-        padding: 2vw;
-        font-size: 30px;
-        transition: color 0.7s ease;
-        animation: backInRight;
-        animation-duration: 0.5s;
-        cursor: pointer;
-    }
-  }
-
-.logo {
-    width: 2.5vw;
-    align-self: center;
-    margin-left: auto;
-    @media (width < 1000px){
-        width: 0;
-    }
-}
-/* Navbar */
-
+/* Hero Banner */
 .hero {
     display: flex;
     width: 100%;
+    margin-bottom: 30px;
     height: 250px;
     background: rgb(226,170,195);
     background: linear-gradient(90deg, rgba(226,170,195,1) 0%, rgba(106,132,163,1) 100%);
+    @media (width < 1000px) {
+        height: 150px;
+    }
 }
 
 .hero-text {
@@ -145,6 +31,7 @@ ul.shrink {
         font-size: 60px;
     }
 }
+/* Hero Banner */
 
 .text {
     display: flex;
@@ -157,8 +44,42 @@ ul.shrink {
     }
 }
 
+.sepline {
+    width: 100%;
+    height: 5px;
+    background: rgb(226,170,195);
+    background: linear-gradient(20deg, rgba(226,170,195,1) 0%, rgba(226,170,195,1) 75%, rgba(106,132,163,1) 100%);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(190, 170, 226);
+    border-radius: 5px;
+}
+
 p {
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
     line-height: 1.8;
 }
+
+
+/* Footer */
+.footer {
+    display: flex;
+    bottom: 0;
+    margin-top: 100px;
+    width: 100%;
+    height: 35px;
+    background: rgb(226,170,195);
+    background: linear-gradient(270deg, rgba(226,170,195,1) 0%, rgba(106,132,163,1) 100%);
+    @media (width < 1000px) {
+        height: 30px;
+    } 
+}
+
+.footertxt {
+    align-self: flex-end;
+    margin-left: 2px;
+    font-size: 20px;
+    font-family: 'Dosis', sans-serif;
+}
+/* Footer */

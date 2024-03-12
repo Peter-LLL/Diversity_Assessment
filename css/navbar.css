@@ -1,0 +1,118 @@
+/* Navbar */
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ada3a4;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Dosis', sans-serif;
+    transition: font 0.4s ease, background-color 0.4s ease;
+    @media (width < 1000px) {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        position: fixed;
+        height: 100%;
+        overflow: hidden;
+        font-size: 30px;
+        transition: width 0.2s ease;
+    }
+}
+
+#open-nav {
+    display: none;
+}
+
+@media (width < 1000px) {
+    #open-nav:checked ~ ul {
+        width: 0;
+    }
+}
+
+li {
+    float: left;
+    @media (width < 1000px) {
+        float: none;
+    }
+}
+
+
+li.hvr-rectangle-out {
+    background: transparent;
+    display: block;
+}
+
+li.hvr-rectangle-out:before {
+    background: #91898a;
+}
+  
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 1vw 1.2vw;
+    transition: padding 0.4s ease, color 0.4s ease, background-color 0.4s ease;
+    @media (width < 1000px) {
+        padding: 16px 8px;
+    }
+}
+
+li a.active {
+    text-decoration: underline;
+}
+
+ul.shrink {
+    background-color: rgb(173, 163, 164, 0.5);
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    li a {
+        padding: 0.6vw 0.8vw;
+        color: black;
+    }
+    li.hvr-rectangle-out {
+        background: transparent;
+        display: block;
+    }
+    
+    li.hvr-rectangle-out:before {
+        background: #dfcdcd;
+    }
+}
+
+.nav-btn {
+    display: none;
+    @media (width < 1000px){
+        display: block;
+        background-color: transparent;
+        color: white;
+        position: fixed; right: 0;
+        margin-top: -12px;
+        padding: 2vw;
+        font-size: 30px;
+        transition: color 0.7s ease;
+        animation: backInRight;
+        animation-duration: 0.5s;
+        cursor: pointer;
+    }
+  }
+
+.logo {
+    width: 2.5vw;
+    align-self: center;
+    margin-left: auto;
+    @media (width < 1000px){
+        width: 0;
+    }
+}
+/* Navbar */
