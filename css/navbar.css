@@ -78,7 +78,6 @@ ul.shrink {
     height: auto;
     li a {
         padding: 0.6vw 0.8vw;
-        color: black;
     }
     li.hvr-rectangle-out {
         background: transparent;
