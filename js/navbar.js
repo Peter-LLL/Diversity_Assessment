@@ -27,7 +27,7 @@ window.addEventListener('scroll', function(event) {
     }
     if (window.scrollY >= 100 && this.innerWidth > 1000) {
         shrink();
-    } else if (window.scrollY <= 0 && this.innerWidth > 1000) {
+    } else if (window.scrollY <= 100 && this.innerWidth > 1000) {
         grow();
     }
   });
