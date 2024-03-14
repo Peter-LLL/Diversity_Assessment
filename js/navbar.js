@@ -34,8 +34,12 @@ window.addEventListener('scroll', function(event) {
 
 window.addEventListener('resize', function(event) {
     event.preventDefault();
-    if (this.innerWidth > 1000) {
+    if (this.innerWidth < 1000) {
+        mobile();
+        return;
+    } else if (this.innerWidth > 1000) {
         if (checkbox.checked!=false)
         checkbox.click();
     }
+    
 })

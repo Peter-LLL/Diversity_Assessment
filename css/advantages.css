@@ -69,6 +69,7 @@ p {
     font-size: 30px;
     right: 0;
     bottom: 0;
+    opacity: 0;
     margin-bottom: 20px;
     margin-right: 20px;
     transition: opacity 0.2s ease;
