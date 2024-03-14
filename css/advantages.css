@@ -72,6 +72,7 @@ p {
     opacity: 0;
     margin-bottom: 20px;
     margin-right: 20px;
+    pointer-events: none;
     transition: opacity 0.2s ease;
 }
 /* Top Button */
