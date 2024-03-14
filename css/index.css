@@ -61,6 +61,17 @@ p {
     line-height: 1.8;
 }
 
+/* Top Button */
+.top-btn {
+    display: block;
+    position: fixed;
+    color: rgb(126, 124, 124);
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+/* Top Button */
 
 /* Footer */
 .footer {
