@@ -77,6 +77,7 @@ p {
 
 .footertxt {
     align-self: flex-end;
+    color: white;
     margin-left: 2px;
     font-size: 20px;
     font-family: 'Dosis', sans-serif;
