@@ -99,15 +99,20 @@ ul.shrink {
         background-color: transparent;
         color: white;
         position: fixed; right: 0;
-        margin-top: -12px;
+        margin-top: -3px;
         padding: 2vw;
         font-size: 30px;
         transition: color 0.7s ease;
-        animation: backInRight;
-        animation-duration: 0.5s;
         cursor: pointer;
     }
   }
+
+  .hamburger-icon {
+    @media (width < 1000px) {
+        animation: backInRight;
+        animation-duration: 0.5s;       
+    }
+}
 
 li:nth-child(4) {
     align-self: center;
