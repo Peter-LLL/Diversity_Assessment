@@ -17,7 +17,7 @@ window.addEventListener('scroll', function(event) {
     event.preventDefault(); 
     if (this.innerWidth < 1000) {
         mobile();
-        if (this.window.scrollY >= 200) {
+        if (this.window.scrollY >= 100) {
             button.style.color = "rgb(126, 124, 124)";
         }
         else {
