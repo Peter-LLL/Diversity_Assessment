@@ -67,6 +67,80 @@ p {
     line-height: 2.5;
 }
 
+.intro {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.img1 {
+    background-size: cover;
+    width: auto;
+    height: 30vw;
+    margin: auto 50px auto 0;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+    visibility: visible;
+    @media (width < 1500px) {
+        display: none;
+    }
+}
+
+.img1text {
+    display: none;
+    margin: 0 auto;
+    width: 40vw;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+    @media (width < 1500px) {
+        display: block;
+    }
+    @media (width < 1000px) {
+        width: 60vw;
+    }
+}
+
+.p2 {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.img2 {
+    background-size: cover;
+    width: auto;
+    height: 30vw;
+    margin: auto 0 auto 50px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+    visibility: visible;
+    @media (width < 1500px) {
+        display: none;
+    }
+}
+
+.img2text {
+    display: none;
+    margin: 0 auto;
+    width: 40vw;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+    @media (width < 1500px) {
+        display: block;
+    }
+    @media (width < 1000px) {
+        width: 60vw;
+    }
+}
+
 /* Top Button */
 .top-btn {
     display: block;
