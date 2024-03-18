@@ -36,6 +36,12 @@ window.addEventListener('resize', function(event) {
     event.preventDefault();
     if (this.innerWidth < 1000) {
         mobile();
+        if (this.window.scrollY >= 100) {
+            button.style.color = "rgb(126, 124, 124)";
+        }
+        else {
+            button.style.color = "white";
+        }
         return;
     } else if (this.innerWidth > 1000) {
         if (checkbox.checked!=false)
