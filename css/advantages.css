@@ -80,6 +80,19 @@ p {
     }
 }
 
+.img2 {
+    display: block;
+    margin: 0 auto;
+    width: 50vw;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+    @media (width < 1000px) {
+        width: 70vw;
+    }
+}
+
 /* Top Button */
 .top-btn {
     display: block;
