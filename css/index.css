@@ -24,6 +24,7 @@ body, html {
 .hero-text {
     align-self: flex-end;
     margin-left: 15px;
+    margin-bottom: 10px;
     font-size: 75px;
     font-family: 'Dosis', sans-serif;
     color: white; 
@@ -67,14 +68,17 @@ p {
     line-height: 2.5;
 }
 
-.img1 {
+.img {
     display: block;
     margin: 0 auto;
-    width: 60vw;
     border-width: 3px;
     border-style: solid;
     border-color: rgb(226,170,195);
     border-radius: 1.5%;
+}
+
+.img1 {
+    width: 60vw;
     @media (width < 1000px) {
         width: 80vw;
     }
@@ -87,15 +91,9 @@ p {
 }
 
 .img2 {
-    background-size: cover;
     width: auto;
     height: 40vw;
     margin: auto 50px auto 0;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
-    visibility: visible;
     @media (width < 1500px) {
         display: none;
     }
@@ -103,17 +101,26 @@ p {
 
 .img2text {
     display: none;
-    margin: 0 auto;
     width: 30vw;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
     @media (width < 1500px) {
         display: block;
     }
     @media (width < 1000px) {
         width: 50vw;
+    }
+}
+
+.img1.adv {
+    width: 40vw;
+    @media (width < 1000px) {
+        width: 60vw;
+    }
+}
+
+.img2.adv {
+    width: 50vw;
+    @media (width < 1000px) {
+        width: 70vw;
     }
 }
 
