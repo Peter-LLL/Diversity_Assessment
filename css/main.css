@@ -12,7 +12,7 @@ body, html {
 .hero {
     display: flex;
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: -10px;
     height: 250px;
     background: rgb(226,170,195);
     background: linear-gradient(90deg, rgba(226,170,195,1) 0%, rgba(106,132,163,1) 100%);
@@ -30,6 +30,12 @@ body, html {
     color: white; 
     @media (width < 1000px) {
         font-size: 60px;
+    }
+}
+
+@media (width < 315px) {
+    .hero-text.index {
+        font-size: 45px;
     }
 }
 /* Hero Banner */
