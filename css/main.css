@@ -24,6 +24,7 @@ body, html {
 .hero-text {
     align-self: flex-end;
     margin-left: 15px;
+    margin-bottom: 10px;
     font-size: 75px;
     font-family: 'Dosis', sans-serif;
     color: white; 
@@ -67,35 +68,84 @@ p {
     line-height: 2.5;
 }
 
-.intro {
+.img {
+    display: block;
+    margin: 0 auto;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgb(226,170,195);
+    border-radius: 1.5%;
+}
+
+
+.p2.index, .intro.bar, .p2.bar{
     display: flex;
     flex-direction: row;
     margin: 50px 0;
 }
 
-.img1 {
+/* Index img */
+
+.img1.index {
+    width: 60vw;
+    @media (width < 1000px) {
+        width: 80vw;
+    }
+}
+
+.img2.index {
+    width: auto;
+    height: 40vw;
+    margin: auto 50px auto 0;
+    @media (width < 1500px) {
+        display: none;
+    }
+}
+
+.img2text.index {
+    display: none;
+    width: 30vw;
+    @media (width < 1500px) {
+        display: block;
+    }
+    @media (width < 1000px) {
+        width: 50vw;
+    }
+}
+
+/* Advantages img */
+
+.img1.adv {
+    width: 40vw;
+    @media (width < 1000px) {
+        width: 60vw;
+    }
+}
+
+.img2.adv {
+    width: 50vw;
+    @media (width < 1000px) {
+        width: 70vw;
+    }
+}
+
+/* Barriers img */
+
+.img1.bar {
     background-size: cover;
     width: auto;
     height: 30vw;
     margin: auto 50px auto 0;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
     visibility: visible;
     @media (width < 1500px) {
         display: none;
     }
 }
 
-.img1text {
+.img1text.bar {
     display: none;
     margin: 0 auto;
     width: 40vw;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
     @media (width < 1500px) {
         display: block;
     }
@@ -104,35 +154,19 @@ p {
     }
 }
 
-.p2 {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 0;
-}
-
-.img2 {
+.img2.bar {
     background-size: cover;
-    width: auto;
     height: 30vw;
     margin: auto 0 auto 50px;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
-    visibility: visible;
     @media (width < 1500px) {
         display: none;
     }
 }
 
-.img2text {
+.img2text.bar {
     display: none;
     margin: 0 auto;
     width: 40vw;
-    border-width: 3px;
-    border-style: solid;
-    border-color: rgb(226,170,195);
-    border-radius: 1.5%;
     @media (width < 1500px) {
         display: block;
     }
@@ -140,6 +174,7 @@ p {
         width: 60vw;
     }
 }
+
 
 /* Top Button */
 .top-btn {
